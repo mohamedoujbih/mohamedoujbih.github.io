@@ -1,546 +1,510 @@
+<!-- 
+  Portfolio template based on work by Adil Shamim
+  https://github.com/adilshamim8 - Used under MIT License
+-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Mohamed OUJBIH </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: DevFolio
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logo Mohamed Oujbih</title>
-  <style>
-    .logo {
-      text-decoration: none;
-      color: #000; /* Couleur du texte */
-      display: flex;
-      align-items: center;
-      gap: 12px; /* Espacement entre le texte et l'image */
-    }
-
-    .logo .sitename {
-      font-weight: bold;
-      font-size: 1.4rem; /* Taille du texte */
-    }
-
-    .logo img {
-      width: 80px; /* Largeur de l'image augmentée */
-      height: auto; /* Garde les proportions de l'image */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Adil Shamim – Machine Learning Engineer. Explore projects, skills, and contact information.">
+    <title>Mohamed Oujbih-  Junior Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="image/Adil.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="shortcut icon" href="image/Adil.jpeg" type="image/x-icon">
 </head>
 <body>
-  <a href="index.html" class="logo">
-    <h5 class="sitename">MOHAMED OUJBIH</h5>
-    <img src="assets/img/logo.png" alt="Logo">
-  </a>
-</body>
-</html>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home<br></a></li>
-          <li><a href="#about">À propos de moi </a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#portfolio">Projects</a></li>
-       </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
+    <a href="#home" class="skip-link" style="position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to main content</a>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main">
+        <div class="container">
+            <div class="logo">
+                <h1 id="logo-text">MOHAMED OUJBIH</h1>
+            </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="primary-navigation" role="menubar">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+               
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode" title="Toggle theme">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
-
-      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="90">
-        <h3> <em> Bienvenue sur mon siteWeb ! Moi, c'est Mohamed Oujbih  </em> </h3>
-        <p> un passionné de la <span class="typed" data-typed-items="géotechnique, géomatique, géologie,"></span></p>
-      </div>
-
-    </section><!-- /Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="animate-text">Hello, I'm <span class="highlight">Mohamed Oujbih</span></h1>
+                <h2 class="animate-text delay-1">I'm a <span id="typing-text"></span></h2>
+                <p class="animate-text delay-2">Welcome to my personal website where I showcase my work and skills.</p>
+                <div class="hero-buttons animate-text delay-3">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="#projects" class="btn secondary-btn">View My Work</a>
+                </div>
+                <div class="social-icons animate-text delay-4">
+                    <a href="https://www.linkedin.com/in/mohamed-oujbih-3124681b1/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/mohamedoujbih" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.kaggle.com/mohamedoujbih" class="social-link" aria-label="Kaggle" target="_blank" rel="noopener"><i class="fab fa-kaggle" aria-hidden="true"></i></a>
+                    <!-- <a href="https://x.com/adil_shamim8" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a> -->
+                </div>
+            </div>
+            <div class="hero-image animate-text delay-2" data-aos="fade-left" data-aos-duration="1000">
+                <div class="profile-container">
+                    <div class="profile-circle">
+                        <img src="image/Adil.jpeg" alt="Portrait of Adil Shamim" id="profile-img" width="340" height="340" decoding="async" fetchpriority="high">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-md-6">
-
-            <div class="row justify-content-between gy-4">
-              <div class="col-lg-5">
-                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-7 about-info">
-          
-                <p><strong></strong> <span> </span></p>
-               
-              </div>
+<section id="about" class="about section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                <h3>Get to know me!</h3>
+                <p><span class="highlight">Mohamed Oujbih</span> is a <span class="highlight">Geomatics and Mining Geotechnics Student</span> and future <span class="highlight">Water Engineering and Management Engineer</span>, passionate about <span class="highlight">GIS, Remote Sensing, Data Science,</span> and innovative engineering solutions.</p>
+                <p>I’m 22 years old and currently pursuing a <span class="highlight">DUT in Geometallurgy and Mining Geotechnics</span> at the <span class="highlight">École Supérieure de Technologie de Fkih Ben Saleh</span>. After my DUT, I plan to continue my studies at <span class="highlight">FST Tanger</span> in the <span class="highlight">Engineering and Management of Water</span> program.</p>
+                <p>I’m also interested in <span class="highlight">web development</span> and <span class="highlight">engineering processes</span>, combining technical and digital skills to create smart and sustainable solutions.</p>
+                <div class="about-buttons">
+                    <a href="Resume/MohamedOujbih_CV.pdf" class="btn primary-btn" id="download-cv">Resume</a>
+                </div>
             </div>
-
-            <div class="skills-content skills-animation">
-
-              <h5>Skills</h5>
-
-              <div class="progress">
-                <span class="skill"><span>HTML & CSS</span> <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="about-details" data-aos="fade-left" data-aos-duration="800">
+                <div class="detail-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <div>
+                        <h4>Education</h4>
+                        <p>DUT in Geometallurgy and Mining Geotechnics, 
+                        <br>École Supérieure de Technologie de Fkih Ben Saleh (2023–2025)</p>
+                        <p>Future Engineer in Water Engineering and Management,
+                        <br>Faculty of Sciences and Technologies of Tanger</p>
+                    </div>
                 </div>
-              </div><!-- End Skills Item -->
+                <div class="detail-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <h4>Experience</h4>
+                       <p>More than 5 months of internships in geomatics, geological surveying, geochemical analysis, and GIS mapping</p>
 
-            
-              <div class="progress">
-                <span class="skill"><span>arcGIS 10.8</span> <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>Qgis</span> <i class="val">60%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="detail-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Morocco</p>
+                    </div>
                 </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>ENVI</span> <i class="val">60%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="detail-item">
+                    <i class="fas fa-language"></i>
+                    <div>
+                        <h4>Languages</h4>
+                        <p>Arabic, French, English</p>
+                    </div>
                 </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>Geomatica</span> <i class="val">50%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>Google earth engine</span> <i class="val">50%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>JavaScript</span> <i class="val">20%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-
-              <div class="progress">
-                <span class="skill"><span>Adobe Illustrator et Photoshop</span> <i class="val">50%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-               
-                
-              </div><!-- End Skills Item -->
-              <div class="progress">
-                <span class="skill"><span>
-                  Office 365</span> <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div><!-- End Skills Item -->
-             
-              
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="about-me">
-                <h4>À Propos de Moi</h4>
-                <p>
-Étudiant motivé et passionné par la géotechnique, la
-géomatique et la géologie, je suis à la recherche d’un stage PFE
-de deux mois à partir d’avril 2025 inchaallah  Mon objectif est de valoriser
-mes compétences académiques et techniques en les
-appliquant à des projets enrichissants, tout en apportant une
-réelle valeur ajoutée à votre équipe.                <ul>
-                      <li>Maitrise des calculs et études géotechniques.                                                                           </li>
-
-                    <li>Réalisation de levés géologiques.                                                                        </li>
-   
-                    <li>Utilisation du GPS pour la reconnaissance géologique.                                                                        </li>
-    
-                    <li>Techniques de télédétection pour la surveillance environnementale et l'exploration des ressources.                                                                        </li>
- 
-                    <li>Analyse cartographique et interprétation des formations géologiques. </li>
-
-                </ul>
             </div>
         </div>
-        
-        </div>
+    </div>
+</section>
+<!--   hena fin weslaltiii -->
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>My Projects</h2>
+                    <div class="underline"></div>
+                </div>
+                <!-- <div class="project-filters" data-aos="fade-up" data-aos-delay="200">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">ML Models</button>
+                    <button class="filter-btn" data-filter="app">Applications</button>
+                    <button class="filter-btn" data-filter="competition">Competitions</button>
+                </div> -->
+                <div class="projects-grid">
+                    <!-- Project items will be dynamically generated with JavaScript -->
+                </div>
+            </div>
+        </section>
 
-      </div>
+ <!-- Skills Section -->
+<section id="skills" class="skills section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <h2>My Skills</h2>
+      <div class="underline"></div>
+    </div>
 
-    </section><!-- /About Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume "CV"</h2>
-        <p>"Je suis ravi de partager mon CV, reflétant mon parcours d'etude ainsi que mes compétences"</p>
-           <a href="https://drive.google.com/file/d/1ICVwnN-79T5-0JbVcNAnxXQD0Q6y_CJb/view" download style="text-decoration: none;">
-        <button style="padding: 10px 15px; font-size: 14px; background-color: #007BFF; color: #fff; border: none; border-radius: 5px;">
-            Télécharger mon CV
-        </button>
-    </a>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">PROFIL</h3>
-
-            <div class="resume-item pb-0">
-              <h4>MOHAMED OUJBIH</h4>
-              <p><em>Étudiant en géométallurgie et géotechnique minière avec une passion pour la géomatique, la géologie, l'industrie et la géotechnique. 
-              </em></p>
-              <ul>
-                <li>Province de Taroudant , Maroc</li>
-                <li>212613728762</li>
-                <li>linkedin.com/Mohamed oujbih</li>
-              </ul>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">FORMATION</h3>
-            <div class="resume-item">
-              <h5>ÉCOLE SUPÉRIEURE DE TECHNOLOGIE</h5>
-              <h5>2023 - 2025</h5>
-              <p><em>DUT en Géométallurgie et Géotechnique Minière</em></p>
-              <ul>
-                  <li>Géologie appliquée</li>
-                  <li>La géotechnique </li>
-                  <li>Caractérisation et types des gisements</li>
-                  <li>la Minéralogie</li>
-                  <li>Géologie régionale</li>
-                  <li>Techniques de Prospection géologique</li>
-                  <li>Techniques d'Exploitation à ciel ouvert et souterraine</li>
-                  <li>Hydrogéochimie de l’environnement</li>
-                  <li>SIG et Télédétection</li>
-              </ul>
-          </div><!-- End Resume Item -->
-          
-            <div class="resume-item">
-              <h5>Baccalauréat en Sciences Physiques option français</h5>
-              <h5>2022 - 2023</h5>
-              <p><em></em></p>
-              <p></p>
-            </div><!-- Edn Resume Item -->
-            <div class="resume-item">
-              <h5>LANGUES</h5>
-              <ul>
-                <li>Arabe : Langue maternelle</li>
-                <li>Français : Intermédiaire avancé</li>
-                <li>Anglais : Intermédiaire</li>
-                <li>Tamazight : Langue maternelle</li>
-            </ul>
-            
-              <p><em></em></p>
-              <p></p>
-            </div><!-- Edn Resume Item -->
-
+    <div class="skills-container">
+      <!-- GIS & Remote Sensing -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+        <h3>GIS & Remote Sensing</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-globe-africa"></i></div>
+            <h4>ArcGIS / QGIS</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 95%"></div></div>
+            <span class="skill-percentage">Advanced</span>
           </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Experience professionnelle</h3>
-            <div class="resume-item">
-              <h4>Stage technique </h4>
-          
-              <p><em>Aderj Mining Campany, ( 1 MOIS )Imintanout </em></p>
-              <p><em>Sur le sujet de " la Reconnaissance géologique du site minier Jguit (Seksawa,
-                Haut Atlas Occidental, Maroc)"</em></p>
-              <ul>
-                <li>Réalisation de levés de terrain </li>
-                <li>Description et analyse de carottes de sondage.</li>
-                <li>Traitement des données  à l'aide d'Excel.</li>
-                <li>Application de la pédo-géochimie et la prospection à la battée.</li>
-                <li>Élaboration d'une cartographie géologique avec une carte à l'échelle de 1/5000.</li>
-                <li>Mesure de la densité d'échantillons de barytine.</li>
-                <li>Utilisation pratique de la télédétection  </li>
-            </ul>
-            <p>
-                Ce stage m'a permis d'acquérir une solide expérience pratique en géologie appliquée ainsi qu'une meilleure maîtrise des outils de prospection et d'analyse géologique.
-            </p>
-            
-          </div><!-- End Resume Item -->
-          <h3 class="resume-title">COMPÉTENCES</h3>
-            <div class="resume-item">
-          
-              <ul>
-                <li>Excellente communication et capacité à expliquer des concepts techniques</li>
-                <li>Travail d'équipe</li>
-                <li>Polyvalence</li>
-                <li>Motivé</li>
-                <li>Rigueur</li>
-                <li>Autonomie</li>
-                <li>Sens de l'initiative</li>
-                <li>Créativité</li>
-            
-                </ul>
-            </div><!-- Edn Resume Item -->
-
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-satellite"></i></div>
+            <h4>Google Earth Engine (GEE)</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 90%"></div></div>
+            <span class="skill-percentage">Advanced</span>
           </div>
-
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-image"></i></div>
+            <h4>ENVI / Geomatica</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 85%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>QField</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 80%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
         </div>
-
       </div>
 
-    </section><!-- /Resume Section -->
-
-    
+      <!-- 3D Modeling & Visualization -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+        <h3>3D Modeling & Visualization</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-cube"></i></div>
+            <h4>Leapfrog Geo & Datamine software</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 85%"></div></div>
+            <span class="skill-percentage">Advanced</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-drafting-compass"></i></div>
+            <h4>AutoCAD</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 80%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-pen-nib"></i></div>
+            <h4>Adobe Illustrator (Logs & Cross-sections)</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 75%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
         </div>
-
       </div>
 
- <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Projects</h2>
-        <p>Découvrez mes projets réalisés. </p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Tout</li>
-            <li data-filter=".filter-app">SIG</li>
-            <li data-filter=".filter-product">Téledetection</li>
-            <li data-filter=".filter-branding">développement web</li>
-          
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>MNT</h4>
-                <p>Délimitation et caractérisation physiographique d’un bassin versant</p>
-                <a href="assets/img/portfolio/app-1.jpg" title="MNT" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-             
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Landcover</h4>
-                <p>carte d'occupation du sol </p>
-                <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>carte topographique </h4>
-                <p></p>
-                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-          
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>composition color</h4>
-                <p>affice la vigétation en rouge   </p>
-                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>google earth engine</h4>
-                <p>GEE </p>
-                <a href="assets/img/portfolio/product-3.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Classification supervised</h4>
-                <p>source : landsat8</p>
-                <a href="assets/img/portfolio/product-2.jpg" title="landsat8" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/portfolio/product-10.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Traitement d'images satellites </h4>
-                <p> Radio , Flaash, MNF, ACP, band ratio, extraction de linéaments     </p>
-                <a href="assets/img/portfolio/product-10.jpg" title="Product 10" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/portfolio/branding-1.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>développement d'un siteweb</h4>
-                <p>par l'Utilisation de HTML et CSS et JavaScript </p>
-                <a href="assets/img/portfolio/branding-1.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-  
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/portfolio/app-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>cartographie géologique</h4>
-                <p>Élaboration d'une cartographie géologique avec une carte à l'échelle de 1/5000.</p>
-                <a href="assets/img/portfolio/app-4.jpg" title="App 4" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-          </div><!-- End Portfolio Container -->
-
+      <!-- Geology & Mining -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+        <h3>Geology & Mining</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-mountain"></i></div>
+            <h4>Applied Geology</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 90%"></div></div>
+            <span class="skill-percentage">Advanced</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-gem"></i></div>
+            <h4>Exploration & Mineralogy</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 88%"></div></div>
+            <span class="skill-percentage">Advanced</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-hard-hat"></i></div>
+            <h4>Mining Geotechnics</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 80%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-flask"></i></div>
+            <h4>Geochemistry & Metallurgy</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 82%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
         </div>
-
       </div>
 
-    </section><!-- /Portfolio Section -->
+      <!-- Programming & Data -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+        <h3>Programming & Data</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <h4>Python </h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 85%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h4>SQL / Excel</h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 80%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fab fa-r-project"></i></div>
+            <h4>R </h4>
+            <div class="skill-progress"><div class="progress-bar" style="width: 78%"></div></div>
+            <span class="skill-percentage">Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Skills (Original Version) -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+        <h3>Professional Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-item" data-skill="Communication">
+            <div class="skill-icon"><i class="fas fa-comments"></i></div>
+            <h4>Communication</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+            <span class="skill-percentage"></span>
+          </div>
+          <div class="skill-item" data-skill="Teamwork">
+            <div class="skill-icon"><i class="fas fa-users"></i></div>
+            <h4>Teamwork</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 85%"></div>
+            </div>
+            <span class="skill-percentage"></span>
+          </div>
+          <div class="skill-item" data-skill="Problem Solving">
+            <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <h4>Problem Solving</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 88%"></div>
+            </div>
+            <span class="skill-percentage"></span>
+          </div>
+          <div class="skill-item" data-skill="Creativity">
+            <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
+            <h4>Creativity</h4>
+            <div class="skill-progress">
+              <div class="progress-bar" style="width: 92%"></div>
+            </div>
+            <span class="skill-percentage"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech-stack" class="tech-stack section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <!-- <h2>My Tech Stack</h2> -->
+                    <!-- <div class="underline"></div> -->
+                </div>
+                <!-- <div class="tech-categories">
+                    <div class="tech-category" data-aos="fade-up">
+                        <h3>Programming Languages</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+                                <span>R</span>
+                            </div> -->
+                            <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div> -->
+                            <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    </div> --> 
+                    
+                    <!-- <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Machine Learning / AI</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                                <span>PyTorch</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn">
+                                <span>Scikit-learn</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy">
+                                <span>NumPy</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+                                <span>Pandas</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn">
+                                <span>Seaborn</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib">
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Tools & Platforms</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                                <span>Git</span>
+                            </div>
+                            <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                                <span>Docker</span>
+                            </div> -->
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+                                <span>Jupyter</span>
+                            </div>
+                            <div class="tech-item" data-tilt>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
+                                <span>VS Code</span>
+                            </div>
+                            <!-- <div class="tech-item" data-tilt>
+                                <img src="https://cdn.brandfetch.io/cursor.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="Cursor">
+                                <span>Cursor</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
-          <div class="row gy-5">
-
-            
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3> telephone</h3>
-                  <p>+212613728762</p>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out to me for any questions or opportunities!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>oujbih.mohamed@etu.ac.ma</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Morocco</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="col-lg-4">
-              <div class="info-item d-flex align-items-center">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email </h3>
-                  <p>mohamedoujbih.efb@usms.ac.ma</p>
+                
+                <!-- Code snippet showcase -->
+                <div class="contact-code" data-aos="fade-left" data-aos-duration="800">
+                    <div class="code-snippet-container">
+                        <div class="code-header">
+                            <span class="code-title">Python ML Code Sample</span>
+                            <div class="code-actions">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                            </div>
+                        </div>
+                        <pre><code class="language-python">
+ # Machine Learning Pipeline with Scikit-learn
+ import numpy as np
+ from sklearn.model_selection import train_test_split
+ from sklearn.ensemble import RandomForestClassifier
+ from sklearn.metrics import accuracy_score
+                            
+ # Load and prepare data
+ X, y = load_data()
+ X_train, X_test, y_train, y_test = train_test_split(
+ X, y, test_size=0.25, random_state=42
+ )
+                            
+ # Train model
+ model = RandomForestClassifier(n_estimators=100)
+  model.fit(X_train, y_train)
+                            
+ # Evaluate
+ y_pred = model.predict(X_test)
+ accuracy = accuracy_score(y_test, y_pred)
+ print(f"Model accuracy: {accuracy:.2f}")
+                        </code></pre>
+                    </div>
                 </div>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
+            </div>
         </div>
+    </section>
 
-      </div>
 
-    </section><!-- /Contact Section -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Mohamed Oujbih</h2>
+                </div>
+                <p>Thanks for visiting my portfolio website.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/mohamed-oujbih-3124681b1/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/mohamedoujbih" class="social-link" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.kaggle.com/mohamedoujbih" class="social-link" aria-label="Kaggle" target="_blank" rel="noopener"><i class="fab fa-kaggle" aria-hidden="true"></i></a>
+                    <!-- <a href="" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i></a> -->
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Mohamed Oujbih. 2025 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-  </main>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">MOHMAED OUJBIH 2024/10</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.facebook.com/mastermohamed.oujbih"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/mohamed_oujbih/"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/mohamed-oujbih-3124681b1/"><i class="bi bi-linkedin"></i></a>
-      </div>
-      
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="ab.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="chatbot.js" defer></script>
 </body>
-
-</html>
+</html> 
